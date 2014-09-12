@@ -669,6 +669,20 @@ svg rect {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+.section-info .btn .icon-control-play {
+  color: #342e3f;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  padding-left: 3px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #342e3f;
+}
 .box-choice {
   color: #ffffff;
   font-weight: 200;
