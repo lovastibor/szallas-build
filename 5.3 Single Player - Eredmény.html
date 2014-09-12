@@ -32,46 +32,6 @@
 
 	<div class="container">
 		<div class="bg-app">
-			<!--head-->
-			<div class="head">
-				<div class="row">
-					<div class="col-xs-12 col-sm-2">
-						<a href="#"><span class="icon icon-arrow-left"></span></a>
-					</div>
-					<div class="col-xs-12 col-sm-2">	
-						<div class="profile">	
-							<img class="img-responsive img-circle" src="img/jancsi.png" />
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-8">
-						<div class="head-level">
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-								</div>
-							</div>
-							<div class="skills">
-								<div class="skill-box orange">
-									<span class="skill">12.</span><p>MORZSA</p>
-								</div>
-								<div class="skill-box szint">
-									<span class="skill">1.</span><p>SZINT</p>
-									<span class="glyph-item mega" aria-hidden="true" data-icon="" data-js-prompt="&amp;#xe09b;"></span>
-								</div>
-							</div>
-							
-						</div>
-						<div class="skill-box2">
-							<span class="skill">4 x bátorság</span>
-							<div class="head-points">
-								<span class="active"></span>
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</div>
 			<div class="main">
 				<div class="row">
 					<div class="col-md-12">
@@ -85,7 +45,11 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						
+						<div class="swipe-navigator">
+							<!-- a class="swipe-navigator-prev" href="#" id ="mySwipePrev"><span class="icon icon-arrow-left"></span></a> -->
+							<!--a disable class az a tagbe kiüti a nyilat nem jelenik meg-->
+					  	<a class="swipe-navigator-next" href="#" id ="mySwipeNext"><span class="icon icon-arrow-right"></span></a>
+						</div>
 						<div id='mySwipe' class='swipe'>
 						  <div class='swipe-wrap'>
 						    <div>
@@ -101,8 +65,8 @@
 						                  <input type="checkbox" id="line-checkbox-disabled-checked" checked disabled>
 						                  <label for="line-checkbox-disabled-checked">Disabled &amp; checked</label>
 						                </li>
-						                <li>
-						                  <input type="checkbox" id="line-checkbox-disabled" disabled>
+						                <li class="wrong">
+						                  <input type="checkbox" id="line-checkbox-disabled" disabled checked>
 						                  <label for="line-checkbox-disabled">Disabled</label>
 						                </li>
 						                

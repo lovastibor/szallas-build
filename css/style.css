@@ -98,9 +98,11 @@ body {
   box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);
   padding: 20px;
   text-align: center;
+  font-size: 14px;
+  text-shadwo: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 .modal-body #ms_timer_1 {
-  font-size: 20px;
+  font-size: 40px;
   color: #84cbc5;
 }
 .modal-body .index-login {
@@ -153,6 +155,12 @@ body {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
+.modal-body .btn-facebook {
+  width: 80%;
+}
+.modal-body .btn-gmail {
+  width: 80%;
+}
 .modal-body .modal-icon .glyph-item {
   font-size: 40px !important;
   color: #84cbc5 !important;
@@ -172,6 +180,9 @@ body {
 .modal-body .control-group input {
   width: 50%;
   display: inline-block;
+}
+.modal-body .invite-input {
+  width: 80%;
 }
 .modal-footer {
   margin-top: 0px;
@@ -240,6 +251,7 @@ body {
   height: 15px;
   width: auto;
   margin-top: 2px;
+  left: 0;
 }
 .head .head-points span {
   display: inline-block;
@@ -266,10 +278,6 @@ body {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.head .head-points span:hover {
-  background: #84cbc5;
-  border: 4px solid #84cbc5;
-}
 .head .head-points .active {
   background: #84cbc5;
   border: 4px solid #84cbc5;
@@ -283,7 +291,7 @@ body {
 }
 .head .skill-box2 {
   display: block;
-  text-align: cener;
+  text-align: right;
   padding-top: 5px;
 }
 .head .skill-box2 .skill {
@@ -335,16 +343,19 @@ body {
 }
 .head .head-level .szint {
   position: relative;
-  border: none;
+  border: none !important;
+}
+.head .head-level .szint .skill {
+  border: none !important;
 }
 .head .head-level .szint .glyph-item {
   position: absolute;
-  font-size: 30px;
-  text-align: center;
-  top: 9%;
-  left: 21%;
-  color: #4a3f60;
+  font-size: 48px;
+  top: -11%;
+  left: 2%;
+  color: #eb583f;
   text-shadow: none;
+  text-align: center;
 }
 .head .head-level .skills {
   display: inline-block;
@@ -359,14 +370,14 @@ body {
 }
 .head .head-level .skills .skill-box p {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 8px;
+  font-size: 11px;
 }
 .head .head-level .skills .skill {
   width: 50px;
   height: 50px;
   line-height: 49px;
   background: none;
-  border: 2px solid #eb583f;
+  border: 3px solid #eb583f;
   color: #eb583f;
   -webkit-border-top-right-radius: 50%;
   -webkit-border-bottom-right-radius: 50%;
@@ -447,13 +458,17 @@ body {
   background: #84cbc5;
   border: 4px solid #84cbc5;
 }
-.profile-badge .ok {
-  background: #84cbc5;
-  border: 4px solid #84cbc5;
+.profile-badge .yellow {
+  background: #f6bc3b;
+  border: 4px solid #f6bc3b;
 }
-.profile-badge .wrong {
+.profile-badge .red {
   background: #eb583f;
   border: 4px solid #eb583f;
+}
+.profile-badge .blue {
+  background: #5ecae6;
+  border: 4px solid #5ecae6;
 }
 @media (max-width: 480px) {
   .profile-badge {
@@ -543,29 +558,29 @@ svg rect {
   display: block;
 }
 .info-points .points-message {
-  display: block;
   color: #342e3f;
   margin-top: 10px;
   margin-bottom: 10px;
-  display: inline-block;
-}
-.info-points .points-message .name {
-  text-transform: uppercase;
-  font-weight: 800;
-}
-.info-points .points-message .date {
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 8px;
   display: block;
-  color: #4a3f60;
 }
-.info-points .points-message img {
+.info-points .points-message table {
+  width: 100%;
+}
+.info-points .points-message .tg-head {
+  background: #dedede;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
+.info-points .points-message .tg-cell {
+  border: 1px solid #dedede;
+  text-align: center;
+}
+.info-points .points-message .tg-cell img {
+  text-align: cener;
+  display: block;
+  margin: 0 auto;
   width: 40px;
   height: 40px;
-  margin-right: 10px;
-  display: inline-block;
-  float: left;
 }
 @media (max-width: 770px) {
   .info-points {
@@ -611,6 +626,9 @@ svg rect {
   background: #4a3f60;
   border-bottom: 1px solid #342e3f;
 }
+.section-info hr {
+  border-color: #342e3f;
+}
 .section-info .info {
   background: none;
   border: none;
@@ -618,6 +636,38 @@ svg rect {
   text-transform: uppercase;
   font-weight: 200;
   letter-spacing: 1px;
+}
+.section-info .start-game-button img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.section-info .start-game-button:hover img {
+  opacity: 0.5;
+}
+.section-info .start-game-button:hover .btn {
+  color: #ffffff;
+  background: #6AADA8;
+}
+.section-info .disable {
+  opacity: 0.2;
+}
+.section-info .disable:hover img {
+  opacity: 1.0 !important;
+}
+.section-info .disable:hover .btn {
+  background-color: #84cbc5;
+  border-bottom: 2px solid #6AADA8;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .box-choice {
   color: #ffffff;
@@ -641,6 +691,38 @@ svg rect {
 }
 .disable {
   opacity: 0.2;
+}
+.disable .illsutration-icon:hover {
+  display: block;
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background: #342e3f;
+  -webkit-border-top-right-radius: 50%;
+  -webkit-border-bottom-right-radius: 50%;
+  -webkit-border-bottom-left-radius: 50%;
+  -webkit-border-top-left-radius: 50%;
+  -moz-border-radius-topright: 50%;
+  -moz-border-radius-bottomright: 50%;
+  -moz-border-radius-bottomleft: 50%;
+  -moz-border-radius-topleft: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0px 0px 0px 5px #342e3f;
+  -moz-box-shadow: 0px 0px 0px 5px #342e3f;
+  box-shadow: 0px 0px 0px 5px #342e3f;
+  margin: 0 auto;
+  border: 4px solid #342e3f;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  margin-bottom: 10px;
 }
 @media (max-width: 480px) {
   .disable {
@@ -711,8 +793,8 @@ svg rect {
   float: left;
   margin-top: 20px;
   margin-right: 10px;
-  width: 280px;
-  height: 35px;
+  width: 220px;
+  height: 27px;
   margin-bottom: 0px;
   background: #ffffff !important;
 }
@@ -735,9 +817,22 @@ svg rect {
   display: block;
   background: url(../img/progress.svg);
   z-index: 50;
-  width: 280px;
-  height: 35px;
+  width: 220px;
+  height: 27px;
   position: absolute;
+}
+@media (max-width: 1020px) {
+  .progress {
+    text-align: left;
+    width: 156px;
+    height: 20px;
+    margin-top: 30px;
+  }
+  .progress:before {
+    width: 156px;
+    height: 20px;
+    background: url(../img/progress-mobile.svg);
+  }
 }
 @media (max-width: 790px) {
   .progress {
@@ -765,8 +860,17 @@ svg rect {
     text-align: center;
   }
 }
+.profile {
+  position: relative;
+}
 .profile img {
   margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 80%;
+  margin-top: -15px;
+}
+.profile p {
   text-align: center;
   display: block;
 }
@@ -780,6 +884,11 @@ svg rect {
   .profile img {
     height: 100px;
     width: auto;
+  }
+  .profile p {
+    text-align: center;
+    display: block;
+    line-height: 40px;
   }
 }
 @media (max-width: 480px) {
@@ -1027,6 +1136,9 @@ svg rect {
 }
 .swipe-navigator {
   z-index: 2;
+}
+.swipe-navigator .disable {
+  display: none !important;
 }
 .swipe-navigator .swipe-navigator-prev {
   position: absolute;
@@ -1449,6 +1561,62 @@ svg rect {
   position: absolute;
   left: 10%;
 }
+.list li {
+  display: block;
+}
+.list li input[type=checkbox] {
+  display: none !important;
+}
+.list li input[type=checkbox] + label {
+  list-style: none;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  color: #ffffff;
+  background: #9c9c9c !important;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  position: relative;
+}
+.list li input[type=checkbox] + label:hover {
+  background: #5C928E !important;
+}
+.list li input[type=checkbox]:checked + label {
+  background: #84cbc5 !important;
+}
+.list li input[type=checkbox]:checked + label:after {
+  content: "\e080";
+  display: block;
+  text-align: center;
+  font-family: 'Simple-Line-Icons';
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  position: absolute;
+  left: 10%;
+}
+.list .wrong input[type=checkbox]:checked + label {
+  background: #eb583f !important;
+}
+.list .wrong input[type=checkbox]:checked + label:after {
+  content: "\e082";
+  display: block;
+  text-align: center;
+  font-family: 'Simple-Line-Icons';
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  position: absolute;
+  left: 10%;
+}
 @media (max-width: 480px) {
   .list input[type=radio] + label {
     width: 100% !important;
@@ -1500,16 +1668,16 @@ svg rect {
   position: absolute;
   left: 10%;
 }
-.list-multi .checked-second-player input[type=checkbox]:checked + label {
+.list-multi .yellow input[type=checkbox]:checked + label {
   background: #f6bc3b !important;
 }
-.list-multi .checked-2-player input[type=checkbox]:checked + label {
+.list-multi .blue input[type=checkbox]:checked + label {
   background: #5ecae6 !important;
 }
-.list-multi .checked-wrong input[type=checkbox]:checked + label {
+.list-multi .red input[type=checkbox]:checked + label {
   background: #eb583f !important;
 }
-.list-multi .checked-wrong input[type=checkbox]:checked + label:after {
+.list-multi .red input[type=checkbox]:checked + label:after {
   content: "\e082";
   display: block;
   text-align: center;
@@ -1600,6 +1768,24 @@ svg rect {
   background-color: #2D57A5;
   color: #ffffff;
 }
+.btn-gmail {
+  background-color: #eb583f;
+  border-bottom: 2px solid #C24732;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn-gmail:hover {
+  background: #C24732;
+}
+.btn-gmail .face-icon {
+  margin-right: 10px;
+}
+.btn-gmail:hover {
+  background-color: #C24732;
+  color: #ffffff;
+}
 .center {
   margin: 0 auto;
   text-align: center;
@@ -1672,4 +1858,10 @@ svg rect {
   margin-top: -10px;
   margin-left: -10px;
   margin-right: -10px;
+}
+.fb_iframe_widget {
+  position: absolute;
+  z-index: 100;
+  top: 42px;
+  left: 3px;
 }
