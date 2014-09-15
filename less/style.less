@@ -115,6 +115,11 @@ body{
 		font-size: 40px;
 		color: @green;
 	}
+	.alert{
+		background: @yellow;
+		border: 1px solid #D8A32E;
+		color: @white;
+	}
 	.index-login{
 		display: block;
 		position: relative;
@@ -138,6 +143,7 @@ body{
 		text-align: center;
 		margin: 0 auto;
 	}
+
 	.list-modal{
 
 		list-style: none;
@@ -156,10 +162,10 @@ body{
 		}
 	}
 	.btn-facebook{
-		width: 80%;
+		width: auto;
 	}
 	.btn-gmail{
-		width: 80%;
+		width: auto;
 	}
 	
 	.modal-icon{
@@ -370,7 +376,7 @@ body{
 			display: inline-block;
 			background: none;
 			border: 3px solid @orange;
-			color: @orange;
+			color: @retro;
 			.border-radius(50%,50%, 50%, 50%);
 			display: inline-block;
 			padding: 0 !important;
@@ -540,13 +546,21 @@ svg rect{
 		text-align: center;
 		color: @orange;
 		margin-right: 10px;
+		position: relative;
 
 		.glyph-item{
 			color: @orange;
-			font-size: 30px;
+			font-size: 40px;
 			display: block;
 		}
-
+		.county-text{
+			position: absolute;
+			top: 11px;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			font-weight: 800;
+		}
 	}
 
 
@@ -560,6 +574,22 @@ svg rect{
 		display: block;
 			table{
 				width: 100%;
+
+				td{
+					&:last-child{
+						font-size: 11px;
+						font-weight: 600;
+						padding: 10px;
+						color: @darkblue;
+						background: rgba(0,0,0,0.1);
+						border-top: 1px solid @white;
+					}
+					&:first-child{
+						font-size: 11px;
+						font-weight: 600 !important;
+						padding: 10px;
+					}
+				}
 			}
 			.tg-head{
 				background: #dedede;
@@ -567,8 +597,8 @@ svg rect{
 				border: 1px solid @white;
 			}
 			.tg-cell{
-				border: 1px solid #dedede;
-				text-align: center;
+				margin-left: 5px;
+				text-align: left;
 				img{
 					text-align: cener;
 					display: block;
@@ -620,8 +650,25 @@ background-color:@green;
 	margin-bottom: -10px;
 	padding-bottom:20px;
 	padding-top: 20px;
+	position: relative;
 	background: @darkblue2;
 	border-bottom: 1px solid @darkblue;
+
+	.info-disable-function{
+		background: none;
+		border: none;
+		color: #ffffff;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 1px;
+		position: absolute;
+		text-align: center !important;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 25%;
+		width: 80%;
+	}
 	hr{
 		border-color: @darkblue;
 	}
@@ -671,6 +718,7 @@ background-color:@green;
 				}
 
 			}
+
 		}
 	.btn{
 		.icon-control-play{
@@ -687,6 +735,7 @@ background-color:@green;
 		}
 	}
 }
+
 .box-choice{
 
 	color: @white;
@@ -1285,9 +1334,10 @@ position: relative;
 	
 	.info{
 
-		width: 50%;
+		width: 70%;
 		text-align: center;
 		margin: 0 auto;
+		font-size: 16px;
 		.btn{
 		width: 100% !important;
 		display: block;
@@ -1482,6 +1532,7 @@ position: relative;
   	.drop-shadow(10px, 10px, 0px, 0.2);
   	img{
   		opacity: 0.5;
+  		.border-radius(20px,20px,20px,20px);
   	}
   }
 }
