@@ -1291,6 +1291,9 @@ svg rect {
   text-transform: uppercase;
   margin-top: 20%;
 }
+.fullscreen-swipe .character-change-left input[type=radio] {
+  display: none;
+}
 .fullscreen-swipe .character-change-left img {
   text-align: center;
   margin: 0 auto;
@@ -1319,6 +1322,9 @@ svg rect {
 .fullscreen-swipe .character-change-right img {
   text-align: center;
   margin: 0 auto;
+}
+.fullscreen-swipe .character-change-right input[type=radio] {
+  display: none;
 }
 @media (max-width: 480px) {
   .fullscreen-swipe .character-change-right {
@@ -1644,6 +1650,38 @@ svg rect {
 .list li input[type=radio] + label:hover {
   background: #5C928E !important;
 }
+.list li input[type=radio]:disabled + label {
+  margin-top: 20px;
+  list-style: none;
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  background: #eb583f !important;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  position: relative;
+}
+.list li input[type=radio]:disabled + label:after {
+  content: "\e082";
+  display: block;
+  text-align: center;
+  font-family: 'Simple-Line-Icons';
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  position: absolute;
+  left: 10%;
+}
+.list li input[type=radio]:disabled + label:hover {
+  background: #eb583f !important;
+}
 .list li input[type=radio]:checked + label {
   background: #84cbc5 !important;
 }
@@ -1660,6 +1698,26 @@ svg rect {
   margin-right: 10px;
   position: absolute;
   left: 10%;
+}
+.list li input[type=radio]:checked:disabled + label {
+  background: #84cbc5 !important;
+}
+.list li input[type=radio]:checked:disabled + label:after {
+  content: "\e080";
+  display: block;
+  text-align: center;
+  font-family: 'Simple-Line-Icons';
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  position: absolute;
+  left: 10%;
+}
+.list li input[type=radio]:checked:disabled + label:hover {
+  background: #84cbc5 !important;
 }
 .list li {
   display: block;
@@ -1683,6 +1741,23 @@ svg rect {
 .list li input[type=checkbox] + label:hover {
   background: #5C928E !important;
 }
+.list li input[type=checkbox] + label[disabled] {
+  background: #3e6372;
+}
+.list li input[type=checkbox] + label[disabled]:after {
+  content: "\e080";
+  display: block;
+  text-align: center;
+  font-family: 'Simple-Line-Icons';
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  position: absolute;
+  left: 10%;
+}
 .list li input[type=checkbox]:checked + label {
   background: #84cbc5 !important;
 }
@@ -1699,6 +1774,39 @@ svg rect {
   margin-right: 10px;
   position: absolute;
   left: 10%;
+}
+.list li input[type=checkbox]:checked + label[disabled] {
+  background: #84cbc5;
+}
+.list li input[type=checkbox]:checked + label[disabled]:after {
+  content: "\e080";
+  display: block;
+  text-align: center;
+  font-family: 'Simple-Line-Icons';
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  position: absolute;
+  left: 10%;
+}
+.list li input[type=checkbox] + label {
+  list-style: none;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  color: #ffffff;
+  background: #9c9c9c !important;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  position: relative;
+}
+.list li input[type=checkbox] + label:hover {
+  background: #5C928E !important;
 }
 .list .wrong input[type=checkbox]:checked + label {
   background: #eb583f !important;
