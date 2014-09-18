@@ -104,11 +104,100 @@
 					8.10 Modal - Szintlépés
 					</a>
 				</div>
+				<br>
+				<div class="col-md-12">
+					<a class="btn btn-orange center" data-toggle="modal" data-target="#braveryplus">
+					Plusz bátorság
+					</a>
+				</div>
+				<br>
+				<div class="col-md-12">
+					<a class="btn btn-orange center" data-toggle="modal" data-target="#braveryminus">
+					Minusz bátorság
+					</a>
+				</div>
+				<br>
+				<div class="col-md-12">
+					<a class="btn btn-orange center" data-toggle="modal" data-target="#morzsaplus">
+					Plusz morzsa
+					</a>
+				</div>
+				<br>
+				<div class="col-md-12">
+					<a class="btn btn-orange center" data-toggle="modal" data-target="#morzsaminus">
+					Minusz Morzsa
+					</a>
+				</div>
 			</div>
 			
 		</div>
 	</div>
-
+	<!-- Kincsesláda nyitva morzsa minusz-->
+	<div class="modal fade" id="braveryminus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">A banya megrémisztett így vesztettél 1 bátorságpontot!</h4>
+	      </div>
+	      <div class="modal-body">
+		    <div class="col-md-12">
+				<img class="img-responsive center" src="img/chest_batorsag_minus.svg" />
+			</div>
+	      </div>
+	      
+	    </div>
+	  </div>
+	</div>
+	<!-- Kincsesláda nyitva bátorság plusz-->
+	<div class="modal fade" id="braveryplus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Szembeszálltál a banyával! Plusz egy bátorságpot! Gratulálunk!</h4>
+	      </div>
+	      <div class="modal-body">
+		    <div class="col-md-12">
+				<img class="img-responsive center" src="img/chest_batorsag_plus.svg" />
+			</div>
+	      </div>
+	      
+	    </div>
+	  </div>
+	</div>
+		<!-- Kincsesláda nyitva morzsa minusz-->
+	<div class="modal fade" id="morzsaminus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">A kincsesláda felhasította az erszényed, így 10 morzsát vesztettél!</h4>
+	      </div>
+	      <div class="modal-body">
+		    <div class="col-md-12">
+				<img class="img-responsive center" src="img/chest_morzsa_minus.svg" />
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Kincsesláda nyitva morzsa plusz-->
+	<div class="modal fade" id="morzsaplus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">A kincsesládában 10 morzsa volt. Gratulálunk!</h4>
+	      </div>
+	      <div class="modal-body">
+		    <div class="col-md-12">
+				<img class="img-responsive center" src="img/chest_morzsa_plus.svg" />
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	<!-- Kincsesláda-->
 	<div class="modal fade" id="kincseslada" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
@@ -210,7 +299,7 @@
 				</div><br>
 				<div class="col-md-12">
 					<div class="index-login">
-						<button class="btn btn-facebook center"><img class="face-icon" src="img/f.png"/>Belépek most</button><br><br>
+						<button class="btn btn-facebook center"><img class="face-icon" src="img/f.png"/>Belépek most</button><br><br>s
 						<div class="alert alert-warning">
 							Nem posztolunk a faladra semmit a külön engedélyed nélkül!
 						</div>
