@@ -1377,6 +1377,21 @@ svg rect {
   width: 100% !important;
   display: block;
 }
+@media (max-width: 480px) {
+  .index-multi .info {
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+    height: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .index-multi {
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+  }
+}
 .fullscreen-swipe-nav {
   z-index: 104;
 }
