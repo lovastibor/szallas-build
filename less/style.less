@@ -870,59 +870,79 @@ svg rect{
 				}
 
 			}
+			.brav-plus{
+				float: left;
+				margin-right: 5px;
+				background: @green;
+				.rounded(50%);
+				font-size: 12px;
+				padding: 5px;
+				text-align: center;
+				color: #fff;
+			
+			}
+			.brav-minus{
+				float: left;
+				margin-right: 5px;
+				background: @orange;
+				.rounded(50%);
+				font-size: 12px;
+				padding: 5px;
+				text-align: center;
+				color: #fff;
+			
+			}
+			.morzsa-plus{
+				float: left;
+				margin-right: 5px;
+				background: @green;
+				.rounded(50%);
+				font-size: 12px;
+				padding: 5px;
+				text-align: center;
+				color: #fff;
+			
+			}
+			.morzsa-minus{
+				float: left;
+				margin-right: 5px;
+				background: @orange;
+				.rounded(50%);
+				font-size: 12px;
+				padding: 5px;
+				text-align: center;
+				color: #fff;
+			
+			}
+			.szint-plus{
+				float: left;
+				margin-right: 5px;
+				background: @green;
+				.rounded(50%);
+				font-size: 12px;
+				padding: 5px;
+				text-align: center;
+				color: #fff;
+			
+			}
+			.szint-minus{
+				float: left;
+				margin-right: 5px;
+				background: @orange;
+				.rounded(50%);
+				font-size: 12px;
+				padding: 5px;
+				text-align: center;
+				color: #fff;
+			
+			}
 			.proflie-event{
 				width: 60%;
 				display: inline-block;
 				float: left;
+
 				p{
-					.brav-plus{
-						margin-right: 5px;
-						width: 20px;
-						height: 20px;
-						background: @green;
-						.rounded(50%);
-						font-size: 12px;
-						padding: 5px;
-						text-align: center;
-						color: #fff;
-					
-					}
-					.brav-minus{
-						margin-right: 5px;
-						width: 20px;
-						height: 20px;
-						background: @orange;
-						.rounded(50%);
-						font-size: 12px;
-						padding: 5px;
-						text-align: center;
-						color: #fff;
-					
-					}
-					.morzsa-plus{
-						margin-right: 5px;
-						width: 20px;
-						height: 20px;
-						background: @green;
-						.rounded(50%);
-						font-size: 12px;
-						padding: 5px;
-						text-align: center;
-						color: #fff;
-					
-					}
-					.morzsa-minus{
-						margin-right: 5px;
-						width: 20px;
-						height: 20px;
-						background: @orange;
-						.rounded(50%);
-						font-size: 12px;
-						padding: 5px;
-						text-align: center;
-						color: #fff;
-					
-					}
+
 					font-weight: 600;
 					text-transform: uppercase;
 				}
@@ -933,7 +953,6 @@ svg rect{
 				line-height: 10px;
 				display: block;
 				text-transform: lowercase;
-				margin-left: 30px;
 			}
 			.profile-score{
 				width: 40%;
@@ -1529,7 +1548,7 @@ position: relative;
 		width: 60%;
 	}
 	@media (max-width: 480px){
-		width: 80%;
+		width: 100%;
 	}
 }
 #nav{
@@ -2124,6 +2143,7 @@ position: relative;
 				}
 			}
 		}
+	
 		input[type=checkbox]:checked + label{
 			background: @green !important;
 			
@@ -2211,7 +2231,10 @@ position: relative;
 
 	}
 	@media (max-width: 480px){
-		
+		input[type=radio] +label{
+			width: 100% !important;
+		}
+	
 		input[type=checkbox] +label{
 			width: 100% !important;
 		}

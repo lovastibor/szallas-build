@@ -862,6 +862,78 @@ svg rect {
   font-weight: 600;
   text-transform: uppercase;
 }
+.info-points .points-message .brav-plus {
+  float: left;
+  margin-right: 5px;
+  background: #84cbc5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+}
+.info-points .points-message .brav-minus {
+  float: left;
+  margin-right: 5px;
+  background: #eb583f;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+}
+.info-points .points-message .morzsa-plus {
+  float: left;
+  margin-right: 5px;
+  background: #84cbc5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+}
+.info-points .points-message .morzsa-minus {
+  float: left;
+  margin-right: 5px;
+  background: #eb583f;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+}
+.info-points .points-message .szint-plus {
+  float: left;
+  margin-right: 5px;
+  background: #84cbc5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+}
+.info-points .points-message .szint-minus {
+  float: left;
+  margin-right: 5px;
+  background: #eb583f;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+}
 .info-points .points-message .proflie-event {
   width: 60%;
   display: inline-block;
@@ -871,64 +943,11 @@ svg rect {
   font-weight: 600;
   text-transform: uppercase;
 }
-.info-points .points-message .proflie-event p .brav-plus {
-  margin-right: 5px;
-  width: 20px;
-  height: 20px;
-  background: #84cbc5;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  font-size: 12px;
-  padding: 5px;
-  text-align: center;
-  color: #fff;
-}
-.info-points .points-message .proflie-event p .brav-minus {
-  margin-right: 5px;
-  width: 20px;
-  height: 20px;
-  background: #eb583f;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  font-size: 12px;
-  padding: 5px;
-  text-align: center;
-  color: #fff;
-}
-.info-points .points-message .proflie-event p .morzsa-plus {
-  margin-right: 5px;
-  width: 20px;
-  height: 20px;
-  background: #84cbc5;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  font-size: 12px;
-  padding: 5px;
-  text-align: center;
-  color: #fff;
-}
-.info-points .points-message .proflie-event p .morzsa-minus {
-  margin-right: 5px;
-  width: 20px;
-  height: 20px;
-  background: #eb583f;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  font-size: 12px;
-  padding: 5px;
-  text-align: center;
-  color: #fff;
-}
 .info-points .points-message .explan {
   font-size: 10px;
   line-height: 10px;
   display: block;
   text-transform: lowercase;
-  margin-left: 30px;
 }
 .info-points .points-message .profile-score {
   width: 40%;
@@ -1544,7 +1563,7 @@ svg rect {
 }
 @media (max-width: 480px) {
   .swipe {
-    width: 80%;
+    width: 100%;
   }
 }
 #nav {
@@ -2232,6 +2251,9 @@ svg rect {
   background: #eb583f !important;
 }
 @media (max-width: 480px) {
+  .list input[type=radio] + label {
+    width: 100% !important;
+  }
   .list input[type=checkbox] + label {
     width: 100% !important;
   }
