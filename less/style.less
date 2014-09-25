@@ -162,6 +162,14 @@ body{
 		font-size: 40px;
 		color: @green;
 	}
+	#ms_timer_3{
+		font-size: 40px;
+		color: @green;
+	}
+	#ms_timer_4{
+		font-size: 40px;
+		color: @green;
+	}
 	.alert{
 		background: @yellow;
 		border: 1px solid #D8A32E;
@@ -2107,6 +2115,11 @@ position: relative;
 		input[type=checkbox]{
 		display: none !important;
 		}
+		input[type=checkbox][disabled] +label{
+			&:hover{
+				background: #9c9c9c !important;
+			}
+		}
 		input[type=checkbox] +label{
 			list-style: none;
 			width: 50%;
@@ -2141,6 +2154,10 @@ position: relative;
 				left: 10%;
 
 				}
+			&:hover{
+				background: #9c9c9c !important;
+			}
+
 			}
 		}
 	

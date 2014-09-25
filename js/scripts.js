@@ -23,6 +23,20 @@ $(document).ready(function() {
       size: "lg"
     });
   });
+    $(function() {
+    $('#ms_timer_3').countdowntimer({
+      minutes: 0,
+      seconds: 5,
+      size: "lg"
+    });
+  });
+  $(function() {
+    $('#ms_timer_4').countdowntimer({
+      minutes: 0,
+      seconds: 5,
+      size: "lg"
+    });
+  });
 
 
   var elem = document.getElementById('mySwipe');

@@ -159,6 +159,14 @@ body {
   font-size: 40px;
   color: #84cbc5;
 }
+.modal-body #ms_timer_3 {
+  font-size: 40px;
+  color: #84cbc5;
+}
+.modal-body #ms_timer_4 {
+  font-size: 40px;
+  color: #84cbc5;
+}
 .modal-body .alert {
   background: #f6bc3b;
   border: 1px solid #D8A32E;
@@ -2144,6 +2152,9 @@ svg rect {
 .list li input[type=checkbox] {
   display: none !important;
 }
+.list li input[type=checkbox][disabled] + label:hover {
+  background: #9c9c9c !important;
+}
 .list li input[type=checkbox] + label {
   list-style: none;
   width: 50%;
@@ -2176,6 +2187,9 @@ svg rect {
   margin-right: 10px;
   position: absolute;
   left: 10%;
+}
+.list li input[type=checkbox] + label[disabled]:hover {
+  background: #9c9c9c !important;
 }
 .list li input[type=checkbox]:checked + label {
   background: #84cbc5 !important;
