@@ -112,6 +112,14 @@ body{
 	// .drop-shadow(@x-axis: 0, @y-axis: 0px, @blur: 2px, @alpha: 0.4);
 	padding: 20px;
 }
+@media (max-width: 480px){
+	.bg-app{
+		padding: 10px;
+	}
+	.container{
+		margin: 10px auto;
+	}
+}
 .logo{
 	font-family: 'Pacifico', cursive;
 	line-height: 42px;
@@ -274,7 +282,7 @@ body{
 	}
 }
 .head{
-	margin: -20px -20px 20px -20px;
+	margin: -20px -20px 12px -20px;
 	padding: 15px;
 	color: @white;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
@@ -352,7 +360,7 @@ body{
 	.skill-box2{
 	display: block;
 	text-align: right;
-	padding-top: 5px;
+	padding-top: 3px;
 
 
 		.skill{
@@ -370,13 +378,16 @@ body{
 				text-align: center;
 				font-size: 12px;
 				padding: 2px;
+
 			}
 			@media (max-width: 480px){
 				display: block !important;
 				text-align: center;
 				font-size: 12px;
-				padding: 2px;
-				font-size: 10px;
+				padding-top: 0px;
+				font-size: 12px;
+				line-height: 14px;
+				margin-bottom: 12px;
 			}
 		}
 		@media (max-width: 771px){
@@ -384,6 +395,14 @@ body{
 			text-align: center;
 			display: block;
 
+		}
+		@media (max-width: 790px){
+			margin-top: -15px !important;
+			margin-bottom: -8px;
+		}
+		@media (max-width: 790px){
+			margin-top: -5px !important;
+			margin-bottom: 0px;
 		}
 	}
 	.head-level{
@@ -497,7 +516,7 @@ body{
 			}
 		}
 		.head-points{
-			height: 20px;
+			height: 5px;
 		}
 	}
 	
@@ -750,6 +769,7 @@ svg rect{
 				line-height: 12px !important;
 				margin-top: 5px;
 				text-align: center;
+				font-size: 11px;
 			}
 		}
 		.profile-name-list{
@@ -762,7 +782,7 @@ svg rect{
 
 		}
 		.profile-level{
-			width: 15% !important;
+			width: 20% !important;
 			line-height: 12px !important;
 			margin-top: 5px;
 			text-align: center !important;
@@ -1597,7 +1617,7 @@ position: relative;
 	.swipe-navigator-prev{
 		position: absolute;
 		color: @green;
-		top: 25%;
+		top: 30%;
 		display: block;
 		outline: none;
 		margin-top:-20px;
@@ -1614,7 +1634,7 @@ position: relative;
 		.swipe-navigator-next{
 		position: absolute;
 		color: @green;
-		top: 25%;
+		top: 30%;
 		margin-top:-20px;
 		display: block;
 		outline: none;
@@ -1675,7 +1695,17 @@ position: relative;
 	  	width:100%;
 	  }
 	}
-
+	.character-change{
+		.info{
+			background: @orange;
+			color: @white;
+		}
+		.icon{
+			font-size: 30px;
+			margin-top: 10px;
+			display: block;
+		}
+	}
 	.character-change-left{
 		width: 50%;
 		position: relative;
@@ -1704,6 +1734,12 @@ position: relative;
 			img{
 				width: 100px;
 				height: auto;
+			}
+		}
+		&:hover{
+			color: @orange !important;
+			img{
+				opacity: 0.8;
 			}
 		}
 	}
@@ -1736,6 +1772,13 @@ position: relative;
 				width: 100px;
 				height: auto;
 			}
+		}
+		&:hover{
+			color: @orange !important;
+			img{
+				opacity: 0.8;
+			}
+			
 		}
 	}
 }
@@ -1886,6 +1929,9 @@ position: relative;
 
 			}
 
+	}
+	.yellow{
+		color: @yellow !important;
 	}
 
 }
@@ -2567,3 +2613,19 @@ footer{
 		}
 	}
 }
+
+	.swipe-navigator{
+		z-index: 2;
+		position: absolute;
+		width: 60%;
+		margin: 0 auto;
+		left: 0;
+		top: 25%;
+		right: 0;
+		@media (max-width: 780px){
+			width: 75%;
+		}
+		@media (max-width: 480px){
+			width: 100%;
+		}
+	}

@@ -105,6 +105,14 @@ body {
   color: #3e6372 !important;
   padding: 20px;
 }
+@media (max-width: 480px) {
+  .bg-app {
+    padding: 10px;
+  }
+  .container {
+    margin: 10px auto;
+  }
+}
 .logo {
   font-family: 'Pacifico', cursive;
   line-height: 42px;
@@ -267,7 +275,7 @@ body {
   height: auto;
 }
 .head {
-  margin: -20px -20px 20px -20px;
+  margin: -20px -20px 12px -20px;
   padding: 15px;
   color: #ffffff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
@@ -363,7 +371,7 @@ body {
 .head .skill-box2 {
   display: block;
   text-align: right;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 .head .skill-box2 .skill {
   text-transform: uppercase;
@@ -390,9 +398,10 @@ body {
   .head .skill-box2 .skill {
     display: block !important;
     text-align: center;
+    padding-top: 0px;
     font-size: 12px;
-    padding: 2px;
-    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 12px;
   }
 }
 @media (max-width: 771px) {
@@ -400,6 +409,18 @@ body {
     margin: 0 auto;
     text-align: center;
     display: block;
+  }
+}
+@media (max-width: 790px) {
+  .head .skill-box2 {
+    margin-top: -15px !important;
+    margin-bottom: -8px;
+  }
+}
+@media (max-width: 790px) {
+  .head .skill-box2 {
+    margin-top: -5px !important;
+    margin-bottom: 0px;
   }
 }
 .head .head-level {
@@ -510,7 +531,7 @@ body {
     margin: 15px -5px auto;
   }
   .head .head-points {
-    height: 20px;
+    height: 5px;
   }
 }
 .profile-badge {
@@ -754,6 +775,7 @@ svg rect {
     line-height: 12px !important;
     margin-top: 5px;
     text-align: center;
+    font-size: 11px;
   }
   .info-points-toplist .profile-name-list p {
     line-height: 12px !important;
@@ -761,7 +783,7 @@ svg rect {
     text-align: center;
   }
   .info-points-toplist .profile-level {
-    width: 15% !important;
+    width: 20% !important;
     line-height: 12px !important;
     margin-top: 5px;
     text-align: center !important;
@@ -1619,7 +1641,7 @@ svg rect {
 .swipe-navigator .swipe-navigator-prev {
   position: absolute;
   color: #84cbc5;
-  top: 25%;
+  top: 30%;
   display: block;
   outline: none;
   margin-top: -20px;
@@ -1637,7 +1659,7 @@ svg rect {
 .swipe-navigator .swipe-navigator-next {
   position: absolute;
   color: #84cbc5;
-  top: 25%;
+  top: 30%;
   margin-top: -20px;
   display: block;
   outline: none;
@@ -1692,6 +1714,15 @@ svg rect {
   margin: 0 auto;
   width: 100%;
 }
+.fullscreen-swipe .character-change .info {
+  background: #eb583f;
+  color: #ffffff;
+}
+.fullscreen-swipe .character-change .icon {
+  font-size: 30px;
+  margin-top: 10px;
+  display: block;
+}
 .fullscreen-swipe .character-change-left {
   width: 50%;
   position: relative;
@@ -1721,6 +1752,12 @@ svg rect {
     height: auto;
   }
 }
+.fullscreen-swipe .character-change-left:hover {
+  color: #eb583f !important;
+}
+.fullscreen-swipe .character-change-left:hover img {
+  opacity: 0.8;
+}
 .fullscreen-swipe .character-change-right {
   width: 50%;
   position: relative;
@@ -1749,6 +1786,12 @@ svg rect {
     width: 100px;
     height: auto;
   }
+}
+.fullscreen-swipe .character-change-right:hover {
+  color: #eb583f !important;
+}
+.fullscreen-swipe .character-change-right:hover img {
+  opacity: 0.8;
 }
 .index-login {
   position: absolute;
@@ -1901,6 +1944,9 @@ svg rect {
     font-size: 20px;
     left: 10px;
   }
+}
+.swipe-navigator .yellow {
+  color: #f6bc3b !important;
 }
 @media (max-width: 480px) {
   .main-content .swipe-navigator-next {
@@ -2541,4 +2587,23 @@ footer a {
 }
 footer a:hover {
   color: #ffffff;
+}
+.swipe-navigator {
+  z-index: 2;
+  position: absolute;
+  width: 60%;
+  margin: 0 auto;
+  left: 0;
+  top: 25%;
+  right: 0;
+}
+@media (max-width: 780px) {
+  .swipe-navigator {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .swipe-navigator {
+    width: 100%;
+  }
 }
