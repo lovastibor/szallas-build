@@ -1152,6 +1152,9 @@ background-color:@green;
 			}
 
 		}
+		@media (max-width:790px){
+			text-align: center;
+		}
 	.btn{
 		.icon-control-play{
 			color: @darkblue;
@@ -1663,6 +1666,62 @@ position: relative;
 
 	}
 }
+// .intro{
+// .swipe-navigator{
+// 	z-index: 2;
+// 		.disable{
+// 			display: none !important;
+// 		}
+// 	.swipe-navigator-prev{
+// 		position: absolute;
+// 		color: @green;
+// 		top: 50%;
+// 		display: block;
+// 		outline: none;
+// 		margin-top:-20px;
+// 		text-align: left;
+// 		left: 0;
+// 		font-size: 40px;
+// 		.transition;
+
+
+// 		&:hover{
+// 			color: @yellow;
+// 		}
+// 	}
+// 		.swipe-navigator-next{
+// 		position: absolute;
+// 		color: @green;
+// 		top: 50%;
+// 		margin-top:-20px;
+// 		display: block;
+// 		outline: none;
+// 		text-align: right;
+// 		right: 0;
+// 		font-size: 40px;
+
+// 		.transition;
+
+// 		&:hover{
+// 			color: @yellow;
+// 		}
+// 	}
+// 	@media (max-width: 480px){
+// 			.swipe-navigator-next{
+// 				font-size: 20px;
+// 				right: 10px;
+
+// 			}
+// 			.swipe-navigator-prev{
+// 				font-size: 20px;
+// 				left: 10px;
+
+
+// 			}
+
+// 	}
+// }
+// }
 /***** fullscreenswipe ****/
 .fullscreen-swipe {
   	overflow: hidden;
@@ -2629,3 +2688,20 @@ footer{
 			width: 100%;
 		}
 	}
+.index{
+	.swipe-navigator{
+		z-index: 2;
+		position: absolute;
+		width: 80%;
+		margin: 0 auto;
+		left: 0;
+		top: 50%;
+		right: 0;
+		@media (max-width: 780px){
+			width: 75%;
+		}
+		@media (max-width: 480px){
+			width: 100%;
+		}
+	}
+}

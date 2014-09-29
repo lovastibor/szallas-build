@@ -1134,6 +1134,11 @@ svg rect {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+@media (max-width: 790px) {
+  .section-info {
+    text-align: center;
+  }
+}
 .section-info .btn .icon-control-play {
   color: #3e6372;
   margin-right: 10px;
@@ -2604,6 +2609,25 @@ footer a:hover {
 }
 @media (max-width: 480px) {
   .swipe-navigator {
+    width: 100%;
+  }
+}
+.index .swipe-navigator {
+  z-index: 2;
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  left: 0;
+  top: 50%;
+  right: 0;
+}
+@media (max-width: 780px) {
+  .index .swipe-navigator {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .index .swipe-navigator {
     width: 100%;
   }
 }
