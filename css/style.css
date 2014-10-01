@@ -1006,10 +1006,6 @@ svg rect {
     display: block !important;
     text-align: cener !important;
     margin: 0 auto !important;
-    width: 100% !important;
-    -webkit-border-radius: 0% !important;
-    -moz-border-radius: 0% !important;
-    border-radius: 0% !important;
   }
 }
 .info-points::-webkit-scrollbar {
