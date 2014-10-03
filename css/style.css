@@ -1002,11 +1002,6 @@ svg rect {
   .info-points .points-message .proflie-event {
     position: relative;
   }
-  .info-points .points-message .proflie-event span {
-    display: block !important;
-    text-align: cener !important;
-    margin: 0 auto !important;
-  }
 }
 .info-points::-webkit-scrollbar {
   width: 16px;
@@ -1407,21 +1402,30 @@ svg rect {
     display: none !important;
   }
 }
-.illustration {
+.index .logo {
+  display: none;
+}
+.index .illustration {
   margin: 0 auto;
   text-align: center;
 }
-.illustration img {
+.index .illustration img {
   display: block;
   margin: 0 auto;
   text-align: center;
 }
 @media (max-width: 480px) {
-  .illustration img {
+  .index .illustration img {
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
   }
+}
+.index .info {
+  display: none;
+}
+.index .index-login {
+  display: none;
 }
 .score {
   margin: 0px -20px -20px -20px;
@@ -1806,8 +1810,8 @@ svg rect {
 .index-login .info {
   left: 0;
   right: 0;
-  background: #4070c9;
-  border: 1px solid #2D57A5;
+  background: #f6bc3b;
+  border: 1px solid #f6bc3b;
   color: #ffffff;
 }
 .index-login .info .btn {
@@ -2017,6 +2021,7 @@ svg rect {
   overflow: hidden;
   text-align: left;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform-style: preserve3d;
   transition: all 0.4s;
   -webkit-border-top-right-radius: 20px;

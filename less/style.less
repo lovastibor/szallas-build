@@ -1011,12 +1011,12 @@ svg rect{
 
 			.proflie-event{
 				position: relative;
-				span{
-					display: block !important;
-					text-align: cener !important;
-					margin: 0 auto !important;
+				// span{
+				// 	display: block !important;
+				// 	text-align: cener !important;
+				// 	margin: 0 auto !important;
 					
-				}
+				// }
 			}
 		}
 	}
@@ -1411,21 +1411,32 @@ position: relative;
 		display: none !important;
 	}
 }
-.illustration{
-	margin: 0 auto;
-	text-align: center;
-	img{
-		display: block;
+.index{
+	.logo{
+		display: none;
+	}
+	.illustration{
 		margin: 0 auto;
 		text-align: center;
-	}
-
-	@media (max-width: 480px){
 		img{
-			max-width: 100%;
+			display: block;
 			margin: 0 auto;
 			text-align: center;
 		}
+
+		@media (max-width: 480px){
+			img{
+				max-width: 100%;
+				margin: 0 auto;
+				text-align: center;
+			}
+		}
+	}
+	.info{
+		display: none;
+	}
+	.index-login{
+		display: none;
 	}
 }
 .score{
@@ -1853,8 +1864,8 @@ position: relative;
 	.info{
 		left: 0;
 		right: 0;
-		background: #4070c9;
-		border: 1px solid #2D57A5;
+		background: @yellow;
+		border: 1px solid @yellow;
 		color: @white;
 		
 		.btn{
@@ -2074,6 +2085,7 @@ position: relative;
 	overflow: hidden;
 	text-align: left;
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 	transform-style: preserve3d;
 	transition: all 0.4s;
 	.border-radius(20px,20px,20px,20px);

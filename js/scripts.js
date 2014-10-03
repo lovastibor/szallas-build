@@ -38,6 +38,11 @@ $(document).ready(function() {
     });
   });
 
+  $('.bg-app').click(function() {
+      $('.logo').fadeIn();
+       $('.info').delay(1000).fadeIn('slow');
+       $('.index-login').delay(2000).fadeIn('slow');
+  }); 
 
   var elem = document.getElementById('mySwipe');
   window.mySwipe = Swipe(elem, {
